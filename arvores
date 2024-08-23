@@ -1,0 +1,56 @@
+def createNode(data):
+  return {"data": data, "left": None, "right": None}
+
+  def insertNodeOnNode(fatherNode, childNode, side):
+    if side == "left":
+      fatherNode["left"] = childNode
+      elif side == "right":
+        fatherNode["right"] = childNode
+        else:
+          print("Invalid side")
+
+
+
+def findNode(node, searchedNode):
+  if node == None:
+    return None
+
+    if node ['data'] ==  searchedNode:
+      print("Node found")
+
+if node['left'] != None:
+  findNode(node['left'], searchedNode)
+
+if node['right'] != None:
+  findNode(node['right'], searchedNode)
+   return None
+
+
+===============================================================
+
+def bfs(node):
+  if node == None:
+    return None
+
+    fila = []
+    fila.append(node)
+
+    # ver se o nó, é o que estou procurando
+    # senão, pega os filhos e adiciona na fila 
+
+    while len(fila) > 0:
+      current = fila.pop(0)
+      if current['data'] == searchedNode:
+        print("Node found")
+      print(current['data'])
+
+      if current['left'] != None:
+        fila.append(current['left'])
+      if current['right'] != None:
+        fila.append(current['right'])
+
+          filinha = [1, 2]
+          filinha.append(3)
+          print(filinha)
+          filinha.pop(0)
+          print(filinha)
